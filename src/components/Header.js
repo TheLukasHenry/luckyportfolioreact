@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,6 +7,7 @@ export default function Header() {
     return (
         <div>
             <Navbar
+                className="header"
                 color="dark"
                 dark
                 expand="md"
@@ -16,7 +17,10 @@ export default function Header() {
                 <NavbarBrand href="/">
                     reactstrap
                 </NavbarBrand>
-                <NavbarToggler onClick={function noRefCheck() { }} />
+                <NavbarToggler
+                    className="me-2"
+                    onClick={function noRefCheck() { }}
+                />
                 <Collapse navbar>
                     <Nav
                         className="me-auto"

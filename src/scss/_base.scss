@@ -1,0 +1,84 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
+
+// $dark1: hsl(0, 0%, 15%);
+// $dark2: hsl(0, 0%, 20%);
+// $light: hsl(150, 80%, 25%);
+// $accent: hsl(150, 80%, 40%);
+// $white: hsl(150, 20%, 85%);
+
+// $base: 0.4rem;
+// $ff-1: "Roboto Mono", monospace;
+// $ff-2: Open Sans;
+
+// $fs-body: 1rem;
+// $fs-h3: 1.6rem;
+// $fs-h2: 2.5rem;
+// $fs-h1: 5.5rem;
+
+// $fs-body-medium: 1.2rem;
+// $fs-h3-medium: 1.9rem;
+// $fs-h2-medium: 3rem;
+// $fs-h1-medium: 9rem;
+
+// $fs-body-wide: 1.4rem;
+// $fs-h3-wide: 2.2rem;
+// $fs-h2-wide: 3.6rem;
+// $fs-h1-wide: 11rem;
+
+// $fs-body-x-wide: 2rem;
+// $fs-h3-x-wide: 2.8rem;
+// $fs-h2-x-wide: 4.4rem;
+// $fs-h1-x-wide: 15rem;
+// h3 {
+//   font-size: $fs-h3;
+// }
+// h2 {
+//   font-size: $fs-h2;
+// }
+// h1 {
+//   font-size: $fs-h1;
+// }
+// @media screen and (min-width: 768px) {
+//   font-size: $fs-body-medium;
+//   h3 {
+//     font-size: $fs-h3-medium;
+//   }
+//   h2 {
+//     font-size: $fs-h2-medium;
+//   }
+//   h1 {
+//     font-size: $fs-h1-medium;
+//   }
+// }
+// @media screen and (min-width: 1024px) {
+//   font-size: $fs-body-wide;
+//   h3 {
+//     font-size: $fs-h3-wide;
+//   }
+//   h2 {
+//     font-size: $fs-h2-wide;
+//   }
+//   h1 {
+//     font-size: $fs-h1-wide;
+//   }
+// }
+
+// @media screen and (min-width: 1800px) {
+//   font-size: $fs-body-x-wide;
+//   h3 {
+//     font-size: $fs-h3-x-wide;
+//   }
+//   h2 {
+//     font-size: $fs-h2-x-wide;
+//   }
+//   h1 {
+//     font-size: $fs-h1-x-wide;
+//   }
+// }
+
+// * {
+//   font-size: $fs-body;
+//   font-family: $ff-1;
+//   color: $white;
+// //   background: $dark1;
+// }

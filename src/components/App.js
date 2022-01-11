@@ -7,15 +7,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import Header from './Header'
 import Footer from './Footer'
+import Landing from './Landing'
+
 import CardTest from './CardTest'
 
 function App() {
   return(
-    <>
-    <Header/>
-    <CardTest/>
-    <Footer/>
-    </>
+    <div>
+      <Header/>
+      {/* <CardTest/> */}
+      <Landing/>
+      <Footer/>
+    </div>
   )
 }
 

@@ -1,4 +1,21 @@
-body {
-  background: pink;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
+.header {
+  z-index: 1;
+}
+
+.header * {
+  color: white;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.Landing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-family: "Roboto Mono", monospace;
+  color: #d1e0d9;
+  background-color: #262626;
 }
 /*# sourceMappingURL=App.css.map */
