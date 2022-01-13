@@ -17,12 +17,15 @@ export default function Landing() {
                     <h3>A.K.A. Lukas</h3>
                     <h3>Web Developer</h3>
                 </Col>
-                <Col md="6" className="pt-md-5">
-                    {/* <ButtonGroup className="m-3 p-3"> */}
-                        <Button className="m-3" size="lg">Projects</Button>
-                        <Button className="m-3" size="lg">Resume</Button>
-                    {/* </ButtonGroup> */}
+                <Col md="6" className="">
+                    <div className="buttons text-center">
+                        <Button className="m-3 btn" size="lg">Projects</Button>
+                        <Button className="m-3 btn" size="lg">Resume</Button>
+                    </div>
+                    <div className="">
+
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur 
+                    </div>
                 </Col>
 
             </Row>

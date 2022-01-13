@@ -1,20 +1,201 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("http://fonts.cdnfonts.com/css/cubano");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("http://fonts.cdnfonts.com/css/cubano");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("http://fonts.cdnfonts.com/css/cubano");
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("http://fonts.cdnfonts.com/css/cubano");
 @import-normalize;
+:root h3 {
+  font-size: 1.6rem;
+}
+
+:root h2 {
+  font-size: 2.5rem;
+}
+
+:root h1 {
+  font-size: 5.5rem;
+  font-family: "Cubano", sans-serif;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 1.2rem;
+  }
+  :root h3 {
+    font-size: 1.9rem;
+  }
+  :root h2 {
+    font-size: 3rem;
+  }
+  :root h1 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 1.4rem;
+  }
+  :root h3 {
+    font-size: 2.2rem;
+  }
+  :root h2 {
+    font-size: 3.6rem;
+  }
+  :root h1 {
+    font-size: 11rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  :root {
+    font-size: 2rem;
+  }
+  :root h3 {
+    font-size: 2.8rem;
+  }
+  :root h2 {
+    font-size: 4.4rem;
+  }
+  :root h1 {
+    font-size: 15rem;
+  }
+}
+
+:root h3 {
+  font-size: 1.6rem;
+}
+
+:root h2 {
+  font-size: 2.5rem;
+}
+
+:root h1 {
+  font-size: 5.5rem;
+  font-family: "Cubano", sans-serif;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 1.2rem;
+  }
+  :root h3 {
+    font-size: 1.9rem;
+  }
+  :root h2 {
+    font-size: 3rem;
+  }
+  :root h1 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 1.4rem;
+  }
+  :root h3 {
+    font-size: 2.2rem;
+  }
+  :root h2 {
+    font-size: 3.6rem;
+  }
+  :root h1 {
+    font-size: 11rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  :root {
+    font-size: 2rem;
+  }
+  :root h3 {
+    font-size: 2.8rem;
+  }
+  :root h2 {
+    font-size: 4.4rem;
+  }
+  :root h1 {
+    font-size: 15rem;
+  }
+}
+
 .header {
   z-index: 1;
 }
 
 .header * {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Sofia Pro", sans-serif;
+}
+
+:root h3 {
+  font-size: 1.6rem;
+}
+
+:root h2 {
+  font-size: 2.5rem;
+}
+
+:root h1 {
+  font-size: 5.5rem;
+  font-family: "Cubano", sans-serif;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 1.2rem;
+  }
+  :root h3 {
+    font-size: 1.9rem;
+  }
+  :root h2 {
+    font-size: 3rem;
+  }
+  :root h1 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 1.4rem;
+  }
+  :root h3 {
+    font-size: 2.2rem;
+  }
+  :root h2 {
+    font-size: 3.6rem;
+  }
+  :root h1 {
+    font-size: 11rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  :root {
+    font-size: 2rem;
+  }
+  :root h3 {
+    font-size: 2.8rem;
+  }
+  :root h2 {
+    font-size: 4.4rem;
+  }
+  :root h1 {
+    font-size: 15rem;
+  }
 }
 
 .landing {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Sofia Pro", sans-serif;
   color: #d1e0d9;
   background-color: #262626;
   min-height: 100vh;
@@ -27,6 +208,65 @@
   min-height: 25rem;
   background-color: #262626;
   background-blend-mode: color;
+}
+
+:root h3 {
+  font-size: 1.6rem;
+}
+
+:root h2 {
+  font-size: 2.5rem;
+}
+
+:root h1 {
+  font-size: 5.5rem;
+  font-family: "Cubano", sans-serif;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 1.2rem;
+  }
+  :root h3 {
+    font-size: 1.9rem;
+  }
+  :root h2 {
+    font-size: 3rem;
+  }
+  :root h1 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 1.4rem;
+  }
+  :root h3 {
+    font-size: 2.2rem;
+  }
+  :root h2 {
+    font-size: 3.6rem;
+  }
+  :root h1 {
+    font-size: 11rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  :root {
+    font-size: 2rem;
+  }
+  :root h3 {
+    font-size: 2.8rem;
+  }
+  :root h2 {
+    font-size: 4.4rem;
+  }
+  :root h1 {
+    font-size: 15rem;
+  }
 }
 
 .footer {
