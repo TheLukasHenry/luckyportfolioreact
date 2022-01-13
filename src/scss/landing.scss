@@ -1,0 +1,23 @@
+@import "./variables/scss-variables.scss";
+
+
+.landing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: $ff-1;
+    color: $white;
+    background-color: $primary;
+    min-height: 100vh;
+  }
+
+.profile-pic {
+  background-repeat: no-repeat;
+  // aspect-ratio: 2/3;
+  background-size:contain;
+  background-position:center;
+  min-height: 25rem;
+  background-color: $primary;
+  background-blend-mode: color;
+  // background-position: top left;
+  // background-origin: content-box;
+}

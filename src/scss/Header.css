@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
 .header {
   z-index: 1;
 }
 
 .header * {
-  color: white;
+  font-family: "Roboto Mono", monospace;
 }
 /*# sourceMappingURL=header.css.map */

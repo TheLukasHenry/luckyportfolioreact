@@ -1,12 +1,32 @@
-// @import './_base.scss';
+@import "./variables/scss-variables.scss";
+
 
 
 .header {
     z-index: 1;
-    // background: $dark1;
+    // background-color: $primary;
+    
     * {
-        color: white;
-        
+        font-family: $ff-1;
     }
+
+    // h1 {
+    //     font-size: $fs
+    // }
+
+    // NavbarBrand{
+    //     :hover {
+    //         opacity: 0.3;
+    //         color: $white;
+    //     }
+    // }
 }
+
+// .nav-link {
+//     color: $white;
+//     opacity: 1;
+//     :hover {
+//         opacity: 0.3;
+//     }
+// }
 

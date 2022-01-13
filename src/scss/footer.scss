@@ -1,0 +1,20 @@
+@import "./variables/scss-variables.scss";
+
+
+.footer {
+    background-color: $primary-opacity;
+}
+
+.footer-link{
+    opacity: 0.8;
+}
+
+.footer-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px -3px 20px black;
+    opacity: 1;
+    transition-duration: 300ms;
+}
+
+
+

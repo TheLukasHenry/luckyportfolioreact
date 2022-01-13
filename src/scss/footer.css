@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
+.footer {
+  background-color: #333333;
+}
+
+.footer-link {
+  opacity: 0.8;
+}
+
+.footer-link:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0px -3px 20px black;
+          box-shadow: 0px -3px 20px black;
+  opacity: 1;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+/*# sourceMappingURL=footer.css.map */

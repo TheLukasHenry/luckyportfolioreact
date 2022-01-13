@@ -1,37 +1,71 @@
-// @import-normalize;
+@import-normalize;
 @import "./variables/scss-variables.scss";
 // @import "./variables/css-variables.scss";
 
 
 
 @import "./header.scss";
+@import "./landing.scss";
+@import "./footer.scss";
+
+
+// h3 {
+//   font-size: $fs-h3;
+// }
+// h2 {
+//   font-size: $fs-h2;
+// }
+// h1 {
+//   font-size: $fs-h1;
+// }
+// @media screen and (min-width: 768px) {
+//   // font-size: $fs-body-medium;
+//   h3 {
+//     font-size: $fs-h3-medium;
+//   }
+//   h2 {
+//     font-size: $fs-h2-medium;
+//   }
+//   h1 {
+//     font-size: $fs-h1-medium;
+//   }
+// }
+// @media screen and (min-width: 1024px) {
+//   // font-size: $fs-body-wide;
+//   h3 {
+//     font-size: $fs-h3-wide;
+//   }
+//   h2 {
+//     font-size: $fs-h2-wide;
+//   }
+//   h1 {
+//     font-size: $fs-h1-wide;
+//   }
+// }
+
+// @media screen and (min-width: 1800px) {
+//   // font-size: $fs-body-x-wide;
+//   h3 {
+//     font-size: $fs-h3-x-wide;
+//   }
+//   h2 {
+//     font-size: $fs-h2-x-wide;
+//   }
+//   h1 {
+//     font-size: $fs-h1-x-wide;
+//   }
+// }
+
+// // * {
+// //   font-size: $fs-body;
+// //   font-family: $ff-1;
+// //   color: $white;
+// // }
 
 
 
 
 
-// @import './_base.scss';
-
-// @use 'base';
-
-// @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
 
 
 
-
-
-a:hover {
-  opacity: 0.8;
-  // translate not working
-  // transform: translateY(5px);
-}
-
-
-
-.Landing {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  font-family: $ff-1;
-  color: $white;
-  background-color: $primary;
-}
