@@ -8,14 +8,17 @@ export default function Landing() {
         <Container className="landing" fluid>
             <Row className="align-items-center">
                 <Col
-                 md="6"
-                  style={{ backgroundImage: `url(${profilePic})` }}
-                   className="profile-pic" 
-                   >
-                
-                    <h1>Lucky</h1>
-                    <h3>A.K.A. Lukas</h3>
-                    <h3>Web Developer</h3>
+                    md="6"
+                    style={{ backgroundImage: `url(${profilePic})` }}
+                    className="profile-pic"
+                >
+
+                    <h1 className="text-center text-md-left">Lucky</h1>
+                    <div className="d-flex flex-column flex-md-row justify-content-md-between">
+
+                        <h3 className="text-center">A.K.A. Lukas</h3>
+                        <h3 className="text-center">Web Developer</h3>
+                    </div>
                 </Col>
                 <Col md="6" className="">
                     <div className="buttons text-center">
@@ -24,7 +27,7 @@ export default function Landing() {
                     </div>
                     <div className="">
 
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur 
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
                     </div>
                 </Col>
 
