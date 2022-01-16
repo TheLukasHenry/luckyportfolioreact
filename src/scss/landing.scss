@@ -8,28 +8,38 @@
     color: $white;
     background-color: $primary;
     min-height: 100vh;
+
+    .profile-pic {
+      background-repeat: no-repeat;
+      // aspect-ratio: 2/3;
+      background-size:contain;
+      background-position:center;
+      min-height: 25rem;
+      background-color: $primary;
+      background-blend-mode: color;
+      // background-position: top left;
+      // background-origin: content-box;
+    }
+
+    .header-section {
+      width: min-content;
+    }
+
+    .h1-text {
+      // width: calc($fs-h1 * 10px);
+      transform: translateY(-1.5rem);
+    }
   }
 
-.profile-pic {
-  background-repeat: no-repeat;
-  // aspect-ratio: 2/3;
-  background-size:contain;
-  background-position:center;
-  min-height: 25rem;
-  background-color: $primary;
-  background-blend-mode: color;
-  // background-position: top left;
-  // background-origin: content-box;
-}
 
-Button {
-  background-color: $secondary !important;
-  opacity: 0.8;
-  // hover not working at all
-  // :hover {
-  //   transform: translateY(-3px);
-  //   box-shadow: 0px -3px 20px black !important;
-  //   opacity: 1 !important;
-  //   transition-timing-function: 300ms;
-  // }
-}
+// Button {
+//   background-color: $secondary !important;
+//   opacity: 0.8;
+//   // hover not working at all
+//   // :hover {
+//   //   transform: translateY(-3px);
+//   //   box-shadow: 0px -3px 20px black !important;
+//   //   opacity: 1 !important;
+//   //   transition-timing-function: 300ms;
+//   // }
+// }

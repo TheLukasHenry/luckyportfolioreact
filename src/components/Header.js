@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom'
 
 
 export default function Header() {
@@ -14,8 +14,9 @@ export default function Header() {
     fixed="top"
     // light
   >
-    <NavbarBrand href="/">
-      reactstrap
+    <NavbarBrand>
+      <Link to="/">reactstrap</Link>
+      
     </NavbarBrand>
     <NavbarToggler onClick={function noRefCheck(){}} />
     <Collapse navbar>
@@ -24,13 +25,15 @@ export default function Header() {
         navbar
       >
         <NavItem>
-          <NavLink href="/components/">
-            Components
+          <NavLink>
+            <Link to="/about">About</Link>
+            
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap">
-            GitHub
+        <NavLink>
+            <Link to="/contact">Contact</Link>
+            
           </NavLink>
         </NavItem>
         <UncontrolledDropdown
