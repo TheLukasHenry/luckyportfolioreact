@@ -2,26 +2,30 @@ import React, { Component } from 'react'
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
+import Logo from '../pictures/Logo3.png'
+
+
 
 export default function Header() {
     return (
 
-        <div className="header">
+        // <div className="header">
   <Navbar
+    className="header"
     color="dark"
     dark
     expand="md"
     fixed="top"
     // light
   >
-    <NavbarBrand>
-      <Link to="/">reactstrap</Link>
+    <NavbarBrand className="p-0">
+      <Link to="/"><img src={Logo}/></Link>
       
     </NavbarBrand>
     <NavbarToggler onClick={function noRefCheck(){}} />
     <Collapse navbar>
       <Nav
-        className="me-auto"
+        className="ml-auto"
         navbar
       >
         <NavItem>
@@ -65,7 +69,7 @@ export default function Header() {
       </NavbarText>
     </Collapse>
   </Navbar>
-</div>
+// </div>
 
    
     )

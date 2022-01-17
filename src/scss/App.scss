@@ -8,6 +8,15 @@
 @import "./landing.scss";
 @import "./footer.scss";
 
+.main-container {
+    background: $primary;
+    // box-sizing: content-box;
+}
+
+// * {
+//     box-sizing: border-box;
+// }
+
 
 // h3 {
 //   font-size: $fs-h3;

@@ -1,14 +1,17 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Container, Row, Col} from 'reactstrap'
 import { faCoffee, faPhoneSquare, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faLinkedin, faTwitterSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Footer() {
     return (
-        <div>
-            <footer className="footer fixed-bottom">
-            <div className="container">
+        // <div>
+            // <footer className="footer">
+            <Container fluid 
+            className="footer"
+            >
                 <div className="row">             
                   
                     <div className="col flex-col text-center flex items-center justify-center py-2 footer-links">
@@ -21,8 +24,8 @@ export default function Footer() {
                     </div>
                   
                 </div>
-            </div>
-        </footer>
-        </div>
+            </Container>
+        // </footer>
+        // </div>
     )
 }

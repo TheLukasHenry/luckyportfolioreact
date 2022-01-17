@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Container } from 'reactstrap'
 
 import '../scss/App.scss'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,14 +12,15 @@ import Footer from './Footer'
 import Landing from './Landing'
 import About from './About'
 import Contact from './Contact'
+import Projects from './Projects'
 
-import CardTest from './CardTest'
+
 
 function App() {
   return(
     <Router>
 
-    <div>
+    <Container fluid>
       <Header/>
       {/* <CardTest/> */}
       {/* <Landing/> */}
@@ -26,6 +28,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Landing/>
+          <Projects/>
         </Route>
         <Route path="/about">
           <About/>
@@ -33,11 +36,15 @@ function App() {
         <Route path="/contact">
           <Contact/>
         </Route>
+        <Route path="/projects">
+          <Landing/>
+          <Projects/>
+        </Route>
       </Switch>
       {/* <About/> */}
 
+    </Container>
       <Footer/>
-    </div>
     </Router>
   )
 }
