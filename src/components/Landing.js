@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row, Col, Button, ButtonGroup } from 'reactstrap'
 
-import LandingHeader from './LandingHeader'
 import profilePic from '../pictures/profile_picc_short.jpg'
+import LandingHeader from './LandingHeader'
 import LandingButtons from './LandingButtons'
 // import {profilePic} from '../pictures/profile_picc_short.jpg'
 

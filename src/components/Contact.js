@@ -1,38 +1,15 @@
 import React from 'react'
-import { Container, Row, Col, Button, ButtonGroup } from 'reactstrap'
-import profilePic from '../pictures/profile_picc_short.jpg'
+import { Row } from 'reactstrap'
+import ContactHeader from './ContactHeader'
+import ContactButtons from './ContactButtons'
+
 
 export default function About() {
     return (
-        <Container className="landing" fluid>
-            <Row className="align-items-center">
-                <Col
-                    md="6"
-                    style={{ backgroundImage: `url(${profilePic})` }}
-                    className="profile-pic"
-                >
-                    <Container className="header-section">
-                        <Row><h1 className="text-md-left m-0">Contact</h1></Row>
-                        <Row className="h1-text">
-                            <Col size="6"><p>A.K.A. Lukas</p></Col>
-                            <Col className="text-right" size="6"><p>Web Developer</p></Col>
-                        </Row>
-                    </Container>
 
-                   
-                </Col>
-                <Col md="6" className="">
-                    <div className="buttons text-center">
-                        <Button color="success" className="m-3 btn" size="lg">Projects</Button>
-                        <Button color="success" className="m-3 btn" size="lg">Resume</Button>
-                    </div>
-                    <div className="">
-
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                </Col>
-
-            </Row>
-        </Container>
+        <Row className="align-items-top landing position-relative">
+            <ContactHeader />
+            <ContactButtons />
+        </Row>
     )
 }

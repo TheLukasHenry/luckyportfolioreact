@@ -18,7 +18,7 @@ export default function Header() {
     fixed="top"
     // light
   >
-    <NavbarBrand className="p-0">
+    <NavbarBrand className="p-0 my-n2">
       <Link to="/"><img src={Logo}/></Link>
       
     </NavbarBrand>
