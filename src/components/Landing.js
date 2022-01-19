@@ -8,36 +8,14 @@ import LandingButtons from './LandingButtons'
 
 export default function Landing() {
     return (
-        // <Container className="landing" fluid>
-            <Row className="align-items-center landing">
+
+            <Row className="align-items-top landing position-relative">
                 <LandingHeader/>
-                {/* <Col
-                    md="6"
-                    style={{ backgroundImage: `url(${profilePic})` }}
-                    className="profile-pic"
-                >
-                    <Container className="header-section">
-                        <Row><h1 className="text-md-left m-0">Lucky</h1></Row>
-                        <Row className="h1-text">
-                            <Col size="6"><p>A.K.A. Lukas</p></Col>
-                            <Col className="text-right" size="6"><p>Web Developer</p></Col>
-                        </Row>
-                    </Container>
 
-                </Col> */}
-                <LandingButtons/>
-                {/* <Col md="6" className="">
-                    <div className="buttons text-center">
-                        <Button color="success" className="m-3 btn" size="lg">Projects</Button>
-                        <Button color="success" className="m-3 btn" size="lg">Resume</Button>
-                    </div>
-                    <div className="">
+                <LandingButtons className=""/>
 
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                </Col> */}
 
             </Row>
-        // </Container>
+
     )
 }

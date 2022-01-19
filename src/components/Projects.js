@@ -6,11 +6,11 @@ import ProjectsCard from './ProjectsCard'
 export default function Projects() {
     return (
         <Row>
-            <Col md={6} className="">
+            <Col md={6} className="p-0">
                 <ProjectsCard/>
 
             </Col>
-            <Col md={6} className="">
+            <Col md={6} className="p-0">
                 <ProjectsCard/>
 
             </Col>

@@ -11,10 +11,10 @@ export default function ProjectsCard() {
       <CardText>
         With supporting text below as a natural lead-in to additional content.
       </CardText>
-      <Button>
+      <Button className="m-1">
         Go somewhere
       </Button>
-      <Button>
+      <Button className="m-1">
         Go somewhere
       </Button>
     </Card>
