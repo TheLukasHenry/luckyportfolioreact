@@ -6,8 +6,20 @@
     z-index: 1;
     // background-color: $primary;
     
-    * {
-        font-family: $ff-1;
+    // * {
+    //     font-family: $ff-1;
+    //     color: $white;
+    // }
+
+    .nav-link{
+        // font-family: $ff-1;
+        color: $white !important;
+
+        :hover {
+            // opacity: 0.8;
+            color: white !important;
+            transition-duration: 300ms;
+        }
     }
 
     // h1 {

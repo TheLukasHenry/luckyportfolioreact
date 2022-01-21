@@ -8,11 +8,16 @@
 @import "./landing.scss";
 @import "./footer.scss";
 
+
 .main-container {
     background: $primary;
     // box-sizing: content-box;
 }
 
+
+* {
+    font-family: $ff-1;
+}
 // * {
 //     box-sizing: border-box;
 // }

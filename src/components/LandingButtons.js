@@ -5,13 +5,12 @@ import { Col, Button } from 'reactstrap'
 export default function LandingButtons() {
     return (
         <Col md="4" className="
-        mt-n5
         mt-md-5
         
          landing-buttons"
          >
          {/* col working classes:  offset-md-8, position-absolute, */}
-            <div className="buttons mx-auto m-md-2 mt-n5">
+            <div className="buttons mx-auto my-md-2">
                 <Button block color="success" className="btn my-0" size="lg">Projects</Button>
                 <Button block color="success" className="btn my-4" size="lg">Resume</Button>
             </div>

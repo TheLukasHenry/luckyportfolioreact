@@ -4,7 +4,9 @@ import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'react
 
 export default function ProjectsCard() {
     return (
-      <Card body className="projects-card">
+      <Card body outline
+      className="project-card"
+       >
       <CardTitle tag="h3">
         Special Title Treatment
       </CardTitle>

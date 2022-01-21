@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavbarBrand, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
@@ -7,44 +7,52 @@ import Logo from '../pictures/Logo3.png'
 
 
 export default function Header() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  function navbarToggler() {
+    setIsOpen(!isOpen)
+  }
+
     return (
 
-        // <div className="header">
+
   <Navbar
     className="header"
     color="dark"
     dark
     expand="md"
     fixed="top"
-    // light
   >
     <NavbarBrand className="p-0 my-n2">
       <Link to="/"><img src={Logo}/></Link>
       
     </NavbarBrand>
-    <NavbarToggler onClick={function noRefCheck(){}} />
-    <Collapse navbar>
+    <NavbarToggler onClick={navbarToggler}/>
+    <Collapse isOpen={isOpen} navbar>
       <Nav
         className="ml-auto"
         navbar
       >
         <NavItem>
           <NavLink>
-            <Link to="/about">About</Link>
+            <Link className="nav-link" to="/about">About</Link>
             
           </NavLink>
         </NavItem>
         <NavItem>
         <NavLink>
-            <Link to="/contact">Contact</Link>
+            <Link className="nav-link" to="/contact">Contact</Link>
             
           </NavLink>
         </NavItem>
         <UncontrolledDropdown
           inNavbar
           nav
+          className="nav-link"
         >
           <DropdownToggle
+            
             caret
             nav
           >
@@ -69,8 +77,9 @@ export default function Header() {
       </NavbarText>
     </Collapse>
   </Navbar>
-// </div>
 
-   
+
+
+
     )
 }
