@@ -1,0 +1,578 @@
+/* General styling */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Architects Daughter", cursive, sans-serif;
+  color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  background-image: grey;
+  background-image: url(./Images/beach-restaurant.jpg);
+  background-size: cover;
+  background-position: 10% 0%;
+  height: 100%;
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: var(--fs-body);
+  max-width: 550px;
+}
+
+p,
+.footer .contact {
+  font-family: sans-serif;
+  font-weight: var(--fw-thin);
+}
+
+.main {
+  margin: 1em;
+}
+
+/* Size, color, boldness variables */
+:root {
+  --fw-thin: 300;
+  --fw-reg: 400;
+  --fw-bold: 800;
+
+  --clr-light: rgb(209, 209, 209);
+  --clr-dark: rgb(0, 0, 0);
+  --clr-dark2: rgb(24, 24, 24);
+  --clr-accent: #ffcc5d;
+
+  --fs-h1: 2.6rem;
+  --fs-h2: 1.6rem;
+  --fs-body: 1rem;
+}
+
+/* Navbar styling */
+.navbar {
+  min-height: 54px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-dark);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+}
+
+.nav-links .link {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  color: var(--clr-light);
+  text-decoration: none;
+  display: none;
+  text-transform: uppercase;
+  padding: 0.3em 0em;
+  background-color: var(--clr-dark);
+  width: 100vw;
+  transition: all 0.3s ease;
+}
+
+.nav-open .link {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+  font-size: var(--fs-h2);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-light);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  text-decoration: none;
+  justify-content: right;
+  width: 100vw;
+  position: fixed;
+  margin-top: 54px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.nav-open .nav-links a:last-of-type {
+  border-bottom: 1px solid var(--clr-light);
+}
+
+.nav-open .nav-links {
+  transform: translateX(0);
+}
+
+.company {
+  font-size: var(--fs-body);
+  margin-left: 1rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+}
+
+.navbar a .company:hover {
+  color: var(--clr-accent);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 1000;
+  margin: 1rem;
+}
+
+.nav-links .link:hover {
+  color: var(--clr-accent);
+  background: var(--clr-dark2);
+}
+
+.nav-open .nav-toggle {
+  justify-self: center;
+}
+
+.hamburger {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background-color: var(--clr-accent);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before {
+  top: 6px;
+}
+.hamburger::after {
+  bottom: 6px;
+}
+
+.navbar *,
+.footer * {
+  padding: 0;
+}
+
+/* Footer styling */
+.footer {
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 1rem;
+  font-size: var(--fs-body);
+  z-index: 2;
+  margin-top: auto;
+  background: var(--clr-dark);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links i {
+  padding: 0.3em;
+  color: var(--clr-light);
+}
+
+.footer-links i:hover,
+.phone:hover,
+.email:hover,
+.address:hover {
+  opacity: 0.7;
+}
+
+.contact {
+  max-width: 70%;
+}
+
+.email,
+.phone,
+.address {
+  list-style: none;
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.footer-animation * {
+  animation: footer-color 1s ease-in-out;
+}
+
+@keyframes footer-color {
+  50% {
+    color: var(--clr-accent);
+  }
+}
+
+/* Main body styling */
+.button {
+  text-align: left;
+  margin-top: 4em;
+}
+
+.main-btn,
+.submit-btn {
+  padding: 0.5em 1.5em;
+  font-size: var(--fs-body);
+  color: var(--clr-dark);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 2em;
+  transition: all ease-in 0.3s;
+}
+
+.main-btn:hover,
+.main-btn:focus,
+.submit-btn:hover,
+.submit-btn:focus {
+  cursor: pointer;
+  color: var(--clr-accent);
+  scale: 1.1;
+}
+
+.company-body {
+  margin: 0;
+  margin-left: 0.5em;
+  text-align: center;
+  font-size: var(--fs-h1);
+}
+
+.body-h2 {
+  margin-top: 0.5em;
+  font-size: var(--fs-h2);
+}
+
+.btn-text span {
+  font-size: var(--fs-h2);
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  font-family: "Architects Daughter", cursive, sans-serif;
+}
+
+.body-h1 span,
+.company-body {
+  color: var(--clr-accent);
+}
+
+/* Form styling */
+.form-body {
+  background: rgb(58, 58, 58);
+  background-image: url(./Images/wood_bg.jpg);
+  background-blend-mode: multiply;
+}
+
+.form-div {
+  text-align: center;
+  padding: 1em;
+}
+
+.form-info {
+  margin: 2em 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fineprint,
+.email-confirmation {
+  margin: 1em;
+}
+
+.congrats {
+  margin-top: 8em;
+}
+
+.form,
+.intro,
+.email-confirmation {
+  text-align: center;
+  z-index: 10;
+}
+
+.p-email,
+.p-name {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.name,
+.email-input {
+  background: inherit;
+  border: none;
+  color: var(--clr-light);
+  border-bottom: solid 2px var(--clr-accent);
+  border-left: solid 2px var(--clr-accent);
+  font-size: var(--fs-body);
+  margin-bottom: 1.5em;
+}
+
+.name:hover,
+.name:focus,
+.email-input:hover,
+.email-input:focus {
+  outline: none;
+}
+
+.fineprint {
+  margin: 0 auto;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* Menu styling */
+.body-menu {
+  background-image: url(./Images/wood_bg.jpg);
+  background-repeat: repeat;
+}
+
+.menu-h1 {
+  text-align: center;
+  font-size: var(--fs-h1);
+}
+
+.food-header {
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  margin: 0.5em;
+  text-align: center;
+  height: 2.8em;
+}
+
+.menu-choice {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.choice {
+  font-size: var(--fs-body);
+  padding: 0.3em;
+  background: var(--clr-dark);
+  display: inline-block;
+  border: solid var(--clr-light) 1px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.choice:active,
+.choice:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.choice-open {
+  background: inherit;
+  color: var(--clr-accent);
+  border-bottom: none;
+}
+
+.section {
+  display: none;
+}
+
+.main .open {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: auto;
+  max-width: 200px;
+  margin: 0.3em;
+  background: var(--clr-dark);
+  border-radius: 0.5em;
+  box-shadow: 2px 3px 5px var(--clr-dark2);
+  position: relative;
+  cursor: pointer;
+}
+
+.food-pic {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  width: 100%;
+}
+
+.food-text {
+  align-self: center;
+  padding: 0.3em 0.5em;
+}
+
+.open .menu-item:hover,
+.open .menu-item:focus {
+  box-shadow: 2px 1px 5px var(--clr-accent);
+  color: var(--clr-accent);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item__description {
+  display: none;
+}
+
+.open .menu-item:hover .food-pic,
+.open .menu-item:focus .food-pic {
+  display: none;
+}
+
+.open .menu-item:hover .menu-item__description,
+.open .menu-item:focus .menu-item__description {
+  display: inline-block;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Media queries */
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 3.25rem;
+    --fs-h2: 2rem;
+    --fs-body: 1.25rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .navbar .nav-links {
+    flex-direction: row;
+    position: relative;
+    margin-top: 0;
+    transform: translateX(0);
+    padding-right: 0.5em;
+  }
+
+  .navbar .nav-links .link {
+    display: inline-block;
+    width: auto;
+    padding: 0.3em 1em;
+    font-size: var(--fs-body);
+  }
+
+  .nav-open .nav-links a:last-of-type {
+    border: none;
+  }
+
+  .pic-div {
+    background-image: url(Images/beach-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 150px);
+  }
+
+  body .main-form {
+    display: grid;
+    grid-template: auto / 1fr MinMax(500px, 1fr);
+    margin: 0;
+    padding: 0;
+  }
+
+  .open .menu-item:hover .menu-item__description,
+  .open .menu-item:focus .menu-item__description {
+    margin: 0;
+    padding: 0.7em;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --fs-h1: 8rem;
+    --fs-h2: 6rem;
+    --fs-body: 3rem;
+  }
+
+  .body-menu .section .menu-item {
+    max-width: 300px;
+    height: 480px;
+  }
+
+  .navbar {
+    min-height: 158px;
+  }
+
+  .open .menu-item:hover .menu-item__description,
+  .open .menu-item:focus .menu-item__description {
+    margin: auto;
+    padding: 0.5em 0.8em;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 3000px) {
+  :root {
+    --fs-h1: 12rem;
+    --fs-h2: 8rem;
+    --fs-body: 4rem;
+  }
+
+  .body-menu .section .menu-item {
+    max-width: 350px;
+    height: 600px;
+  }
+
+  .navbar {
+    min-height: 208px;
+  }
+
+  .open .menu-item:hover .menu-item__description,
+  .open .menu-item:focus .menu-item__description {
+    font-size: 2.2rem;
+  }
+}
