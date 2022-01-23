@@ -41,11 +41,9 @@
     text-align: center;
   }
 
-  .project-card {
-    background-color: $white;
-    color: $primary;
-    // background-color: white;
-
+  .btn:hover {
+    box-shadow: 3px 3px 10px black;
+    transition-duration: 200ms;
   }
 
 // .landing-buttons {

@@ -16,8 +16,8 @@ export default function Projects() {
                 {projects.map(project => {
                     return (
 
-                        <Col md={6} xl={4} className="p-0">
-                            <ProjectsCard key={project.id} {...project} />
+                        <Col md={6} xl={4} className="p-3">
+                            <ProjectsCard key={project.id} {...project}/>
 
                         </Col>
                     )

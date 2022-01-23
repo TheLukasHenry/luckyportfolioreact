@@ -1,0 +1,14 @@
+.project-card {
+    box-shadow: 1px 1px 5px $primary-opacity;
+}
+
+.project-card:hover {
+    box-shadow: 3px 3px 10px black;
+    transition-duration: 200ms;
+} 
+.project-card {
+    background-color: $white;
+    color: $primary;
+    // background-color: white;
+
+  }
