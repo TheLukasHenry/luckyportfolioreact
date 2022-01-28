@@ -35,16 +35,16 @@ export default function Header() {
         navbar
       >
         <NavItem>
-          <NavLink>
+          {/* <NavLink> */}
             <Link className="nav-link" to="/about">About</Link>
             
-          </NavLink>
+          {/* </NavLink> */}
         </NavItem>
         <NavItem>
-        <NavLink>
+        {/* <NavLink> */}
             <Link className="nav-link" to="/contact">Contact</Link>
             
-          </NavLink>
+          {/* </NavLink> */}
         </NavItem>
         <UncontrolledDropdown
           inNavbar
@@ -52,7 +52,7 @@ export default function Header() {
           className="nav-link"
         >
           <DropdownToggle
-            
+            className="p-0"
             caret
             nav
           >

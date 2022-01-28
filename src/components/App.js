@@ -36,8 +36,8 @@ function App() {
         <Route path="/contact">
           <Contact/>
         </Route>
-        <Route path="/projects">
-          <Landing/>
+        <Route path="/projects/:id">
+          {/* <Landing/> */}
           <Projects/>
         </Route>
       </Switch>

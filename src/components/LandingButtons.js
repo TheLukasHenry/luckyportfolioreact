@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Button } from 'reactstrap'
+import Pdf from '../pictures/Lucky-resume-final.pdf'
 
 
 export default function LandingButtons() {
@@ -11,8 +12,12 @@ export default function LandingButtons() {
          >
          {/* col working classes:  offset-md-8, position-absolute, */}
             <div className="buttons mx-auto my-md-2">
-                <Button block color="success" className="btn my-0" size="lg">Projects</Button>
-                <Button block color="success" className="btn my-4" size="lg">Resume</Button>
+                <Button block color="success" className="btn my-0" size="lg"
+                //  href="#projects"
+                 >
+                 Projects
+                 </Button>
+                <Button block color="success" className="btn my-4" size="lg" href={Pdf} target="_blank" rel='noopener noreferrer'>Resume</Button>
             </div>
             <div className="">
 

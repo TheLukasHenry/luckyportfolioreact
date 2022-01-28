@@ -1,23 +1,31 @@
 import React, { useState } from 'react'
 import { Row, Col, CardGroup } from 'reactstrap'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+
+
 
 import ProjectsCard from './ProjectsCard'
 
 export default function Projects() {
 
     const [projects, setProjects] = useState(projectsList)
+    const { id } = useParams()
 
     return (
-        <Row 
-        // className="card-deck"
-        >
-            {/* <CardGroup> */}
+        // <Route path="/:id">
+
+            <Row
+                // id="projects"
+                className="my-5"
+            >
+                {/* <CardGroup> */}
 
                 {projects.map(project => {
                     return (
 
                         <Col md={6} xl={4} className="p-3">
-                            <ProjectsCard key={project.id} {...project}/>
+                            <ProjectsCard key={project.id} {...project} />
 
                         </Col>
                     )
@@ -35,8 +43,9 @@ export default function Projects() {
                 <ProjectsCard/>
 
             </Col> */}
-            {/* </CardGroup> */}
-        </Row>
+                {/* </CardGroup> */}
+            </Row>
+        // </Route>
     )
 }
 
@@ -46,7 +55,7 @@ const projectsList = [
         h1: 'Sports Search API',
         body: 'I enjoy sports so making this project was fun. I got access to the thesportsdb.com API with the API key to get the data. Originally, I made 4 async-await functions which were getting data and displaying it in the DOM. Those were for the athlete card, league highlights, sports highlights and scores. I made the functions into one big function after making them work. Styling the page was the next step and I used the VanillaTilt.js to add the cool glare effect to bigger screens.',
         codeHref: 'https://github.com/Lherajt/LuckyPortfolio/tree/gh-pages/sportAPI',
-        siteHref: '../projects/sportAPI/index.html'
+        siteHref: '/sportAPI/index.html'
     },
     {
         id: 2,
