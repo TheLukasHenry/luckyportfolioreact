@@ -5,7 +5,7 @@ import profilePic from '../pictures/profile_picc_short.jpg'
 export default function LandingHeader() {
     return (
         <Col
-            md="8"
+            md="7"
             style={{ backgroundImage: `url(${profilePic})` }}
             className="profile-pic"
         >

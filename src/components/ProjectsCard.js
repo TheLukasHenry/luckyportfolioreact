@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // import { useParams } from 'react-router-dom'
 import { Card, CardTitle, CardText, Button } from 'reactstrap'
 // import { Link } from 'react-router-dom'
@@ -13,7 +13,7 @@ export default function ProjectsCard(props) {
     <Card body outline
       className="project-card h-100"
     >
-      {/* <CardBody> */}
+
 
       <CardTitle tag="h3">
         {h1}Project Card details {id}
@@ -21,7 +21,7 @@ export default function ProjectsCard(props) {
       <CardText>
         {body}
       </CardText>
-      {/* <Link to={siteHref}>Site</Link> */}
+      <Link to={siteHref}>Site</Link>
       <Button color="success" href={codeHref} target="_blank" className="m-1">
         Code
       </Button>

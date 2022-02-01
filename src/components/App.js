@@ -20,8 +20,8 @@ function App() {
   return(
     <Router>
 
-    <Container fluid>
       <Header/>
+    <Container fluid>
       {/* <CardTest/> */}
       {/* <Landing/> */}
 
