@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Row, Col, CardGroup } from 'reactstrap'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react'
+import { Row, Col } from 'reactstrap'
+
 import { useParams } from 'react-router-dom'
 
 
@@ -9,7 +9,7 @@ import ProjectsCard from './ProjectsCard'
 
 export default function Projects() {
 
-    const [projects, setProjects] = useState(projectsList)
+    const projects = projectsList
     const { id } = useParams()
 
     return (
@@ -19,7 +19,7 @@ export default function Projects() {
                 // id="projects"
                 className="my-5"
             >
-                {/* <CardGroup> */}
+
 
                 {projects.map(project => {
                     return (
@@ -35,17 +35,8 @@ export default function Projects() {
 
 
 
-                {/* <Col md={6} className="p-0">
-                <ProjectsCard/>
-
-            </Col>
-            <Col md={6} className="p-0">
-                <ProjectsCard/>
-
-            </Col> */}
-                {/* </CardGroup> */}
             </Row>
-        // </Route>
+
     )
 }
 
