@@ -29,7 +29,7 @@ export default function Header() {
     fixed="top"
   >
     <NavbarBrand className="p-0 my-n2">
-      <Link to="/"><img src={Logo}/></Link>
+      <Link to="/"><img src={Logo} /></Link>
       
     </NavbarBrand>
     <NavbarToggler onClick={navbarToggler}/>
@@ -38,12 +38,7 @@ export default function Header() {
         className="ml-auto"
         navbar
       >
-        <NavItem>
-
-            <Link className="nav-link" to="/about">About</Link>
-            
-
-        </NavItem>
+        
 
         <UncontrolledDropdown
           inNavbar
@@ -78,10 +73,14 @@ export default function Header() {
 
           </DropdownMenu>
         </UncontrolledDropdown>
+        <NavItem>
+
+            <Link className="nav-link" to="/about">About</Link>
+            
+
+        </NavItem>
       </Nav>
-      <NavbarText>
-        Simple Text
-      </NavbarText>
+     
     </Collapse>
   </Navbar>
 
