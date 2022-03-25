@@ -9,7 +9,7 @@
 }
 
 :root h1 {
-  font-size: 5.5rem;
+  font-size: 7rem;
   font-family: "Cubano", sans-serif;
   color: white;
 }
@@ -25,7 +25,7 @@
     font-size: 3rem;
   }
   :root h1 {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
@@ -40,7 +40,7 @@
     font-size: 3.6rem;
   }
   :root h1 {
-    font-size: 11rem;
+    font-size: 8rem;
   }
 }
 
@@ -55,7 +55,7 @@
     font-size: 4.4rem;
   }
   :root h1 {
-    font-size: 15rem;
+    font-size: 10rem;
   }
 }
 
@@ -65,20 +65,35 @@
   font-family: "Sofia Pro", sans-serif;
   color: #d1e0d9;
   background-color: #262626;
-  min-height: 100vh;
+  overflow-y: hidden;
+  height: 100vh;
 }
 
-.profile-pic {
+.landing .profile-pic {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-height: 25rem;
   background-color: #262626;
   background-blend-mode: color;
+  background-position: top;
+  background-origin: content-box;
 }
 
-Button {
-  background-color: #0d7340 !important;
-  opacity: 0.8;
+.landing .header-section {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.buttons {
+  width: clamp(200px, 100%, 90vw);
+  text-align: center;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 /*# sourceMappingURL=landing.css.map */

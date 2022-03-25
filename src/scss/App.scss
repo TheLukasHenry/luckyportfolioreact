@@ -2,87 +2,52 @@
 @import "./variables/scss-variables.scss";
 // @import "./variables/css-variables.scss";
 
-
-
 @import "./header.scss";
 @import "./landing.scss";
 @import "./footer.scss";
 @import "./cards.scss";
 
-
 .main-container {
-    background: $primary;
-    // box-sizing: content-box;
+  background: $primary;
+  // box-sizing: content-box;
 }
-
 
 * {
-    font-family: $ff-1;
-    scroll-behavior: smooth;
-    scroll-margin-top: 4rem;
+  font-family: $ff-1;
+  scroll-behavior: smooth;
+  scroll-margin-top: 4rem;
 }
-// * {
-//     box-sizing: border-box;
-// }
 
+.card {
+  .btn,
+  .card-text {
+    display: none;
+  }
 
-// h3 {
-//   font-size: $fs-h3;
-// }
-// h2 {
-//   font-size: $fs-h2;
-// }
-// h1 {
-//   font-size: $fs-h1;
-// }
-// @media screen and (min-width: 768px) {
-//   // font-size: $fs-body-medium;
-//   h3 {
-//     font-size: $fs-h3-medium;
-//   }
-//   h2 {
-//     font-size: $fs-h2-medium;
-//   }
-//   h1 {
-//     font-size: $fs-h1-medium;
-//   }
-// }
-// @media screen and (min-width: 1024px) {
-//   // font-size: $fs-body-wide;
-//   h3 {
-//     font-size: $fs-h3-wide;
-//   }
-//   h2 {
-//     font-size: $fs-h2-wide;
-//   }
-//   h1 {
-//     font-size: $fs-h1-wide;
-//   }
-// }
+  .card-title {
+    margin-bottom: 300px;
+  }
+  .card-text {
+    overflow-y: scroll;
+    // scrollbar-base-color: green;
+    // scrollbar-color: green;
+    // scrollbar-arrow-color: green;
+    // scrollbar-track-color: green;
+    // scrollbar-3dlight-color: green;
+    // scrollbar-face-color: green;
+    // scrollbar-track-color: green;
+    max-height: 200px;
+  }
+}
 
-// @media screen and (min-width: 1800px) {
-//   // font-size: $fs-body-x-wide;
-//   h3 {
-//     font-size: $fs-h3-x-wide;
-//   }
-//   h2 {
-//     font-size: $fs-h2-x-wide;
-//   }
-//   h1 {
-//     font-size: $fs-h1-x-wide;
-//   }
-// }
+.card:hover {
+  animation-timing-function: cubic-bezier(0.1, 0.12, 0.25, 1);
+  .btn,
+  .card-text {
+    display: block;
+  }
 
-// // * {
-// //   font-size: $fs-body;
-// //   font-family: $ff-1;
-// //   color: $white;
-// // }
-
-
-
-
-
-
-
-
+  .card-title {
+    margin-bottom: 0px;
+  }
+}

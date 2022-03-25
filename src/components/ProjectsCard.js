@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 // import { useParams } from 'react-router-dom'
-import { Card, CardTitle, CardText, Button } from 'reactstrap'
+import { Card, CardTitle, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, CloseButton } from 'reactstrap'
 // import { Link } from 'react-router-dom'
 // import Projects from '../projects'
 // import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ProjectsCard(props) {
   const { h1, body, codeHref, siteHref, id } = props
+
+  const [show, setShow] = useState(false);
+  const toggle = () => setShow(!show);
   // const { id } = useParams()
   return (
     <Card body outline
@@ -16,24 +19,78 @@ export default function ProjectsCard(props) {
 
 
       <CardTitle tag="h3">
-        {h1}Project Card details {id}
+        {h1}, id: {id}
       </CardTitle>
-      <CardText>
+      <CardText className="mb-auto">
         {body}
       </CardText>
-      <Link to={siteHref}>Site</Link>
+
       <Button color="success" href={codeHref} target="_blank" className="m-1">
         Code
       </Button>
-      {/* <Link to={`/projects/${id}`}> */}
 
-        <Button color="success"
-         href={siteHref} 
-         target="_blank" className="m-1" new>
-          Site
+
+      <Button color="success"
+        href={siteHref}
+        target="_blank" className="m-1" new>
+        Site
+      </Button>
+
+
+
+
+
+
+      <div>
+        <Button
+          color="danger"
+
+          onClick={toggle}
+        >
+          About project
         </Button>
-      {/* </Link> */}
-      {/* </CardBody> */}
+        <Modal
+          centered
+          fullscreen="lg"
+          size="xl"
+          toggle={toggle}
+          isOpen={show}
+          modalTransition={{ timeout: 500 }}
+        >
+          <ModalHeader toggle={toggle}>
+
+            {h1}
+          </ModalHeader>
+          <ModalBody>
+            {body}
+          </ModalBody>
+          <ModalFooter>
+            <Button 
+            color="success" 
+            href={codeHref}  
+            target="_blank" 
+            className="m-1"
+            onClick={toggle}
+            
+            >
+              Code
+            </Button>
+
+
+            <Button color="success"
+              href={siteHref}
+              target="_blank" 
+              className="m-1" 
+              new
+              onClick={toggle}
+              >
+              Site
+            </Button>
+          
+          </ModalFooter>
+        </Modal>
+      </div>
+
     </Card>
   )
 }

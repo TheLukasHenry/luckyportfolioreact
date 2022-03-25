@@ -9,7 +9,7 @@
 }
 
 :root h1 {
-  font-size: 5.5rem;
+  font-size: 7rem;
   font-family: "Cubano", sans-serif;
   color: white;
 }
@@ -25,7 +25,7 @@
     font-size: 3rem;
   }
   :root h1 {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
@@ -40,7 +40,7 @@
     font-size: 3.6rem;
   }
   :root h1 {
-    font-size: 11rem;
+    font-size: 8rem;
   }
 }
 
@@ -55,7 +55,7 @@
     font-size: 4.4rem;
   }
   :root h1 {
-    font-size: 15rem;
+    font-size: 10rem;
   }
 }
 
@@ -63,7 +63,8 @@
   z-index: 1;
 }
 
-.header * {
-  font-family: "Sofia Pro", sans-serif;
+.header .nav-link :hover {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 /*# sourceMappingURL=header.css.map */

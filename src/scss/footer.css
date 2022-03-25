@@ -9,7 +9,7 @@
 }
 
 :root h1 {
-  font-size: 5.5rem;
+  font-size: 7rem;
   font-family: "Cubano", sans-serif;
   color: white;
 }
@@ -25,7 +25,7 @@
     font-size: 3rem;
   }
   :root h1 {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
@@ -40,7 +40,7 @@
     font-size: 3.6rem;
   }
   :root h1 {
-    font-size: 11rem;
+    font-size: 8rem;
   }
 }
 
@@ -55,12 +55,13 @@
     font-size: 4.4rem;
   }
   :root h1 {
-    font-size: 15rem;
+    font-size: 10rem;
   }
 }
 
 .footer {
   background-color: #333333;
+  z-index: 1;
 }
 
 .footer-link {
@@ -72,6 +73,7 @@
           transform: translateY(-3px);
   -webkit-box-shadow: 0px -3px 20px black;
           box-shadow: 0px -3px 20px black;
+  background-color: #1a1a1a;
   opacity: 1;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
