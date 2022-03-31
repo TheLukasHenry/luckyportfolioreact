@@ -85,12 +85,12 @@
   width: min-content;
 }
 
-.buttons {
+.landing .buttons {
   width: clamp(200px, 100%, 90vw);
   text-align: center;
 }
 
-.btn:hover {
+.landing .btn:hover {
   -webkit-box-shadow: 3px 3px 10px black;
           box-shadow: 3px 3px 10px black;
   -webkit-transition-duration: 200ms;

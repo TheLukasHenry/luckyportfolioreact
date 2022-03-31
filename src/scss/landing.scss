@@ -31,13 +31,7 @@
       width: min-content;
     }
 
-    // .h1-text {
-    //   transform: translateY(-1.5rem);
-    // }
-  }
-
-  .buttons {
-    // max-width: 80vw;
+   .buttons {
     width: clamp(200px, 100%, 90vw);
     text-align: center;
   }
@@ -46,6 +40,9 @@
     box-shadow: 3px 3px 10px black;
     transition-duration: 200ms;
   }
+  }
+
+
 
 // .landing-buttons {
 //   transform: translateY(200px);

@@ -6,7 +6,7 @@ import { faLinkedin, faTwitterSquare, faGithubSquare } from '@fortawesome/free-b
 
 import { Link } from 'react-router-dom'
 
-import Logo from '../pictures/Logo3.png'
+import Logo from '../pictures/Logo1.png'
 
 
 

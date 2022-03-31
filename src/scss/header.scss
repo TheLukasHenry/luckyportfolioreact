@@ -1,42 +1,50 @@
 @import "./variables/scss-variables.scss";
 
-
-
 .header {
-    z-index: 1;
-    // background-color: $primary;
-    
-    // * {
-    //     font-family: $ff-1;
-    //     color: $white;
-    // }
-
-    .nav-link{
-        // font-family: $ff-1;
-        // color: $white !important;
-
-        :hover {
-            // opacity: 0.8;
-            // color: white !important;
-            transition-duration: 300ms;
-        }
+  z-index: 1;
+  .navbar-brand {
+    :hover {
+      opacity: 0.8;
+      transition: 150ms all ease-in-out;
     }
-    // .nav-contact-link {
-    //     :hover a{
-    //         color: pink !important;
-    //     }
-    // }
+    img {
+      max-height: 2.2em;
+    }
+  }
 
-    // h1 {
-    //     font-size: $fs
-    // }
+  // background-color: $primary;
 
-    // NavbarBrand{
-    //     :hover {
-    //         opacity: 0.3;
-    //         color: $white;
-    //     }
-    // }
+  // * {
+  //     font-family: $ff-1;
+  //     color: $white;
+  // }
+
+  .nav-link {
+    // font-family: $ff-1;
+    // color: $white !important;
+
+    :hover {
+      // opacity: 0.8;
+      // color: white !important;
+      transition-duration: 300ms;
+    }
+  }
+  // .nav-contact-link {
+  //     :hover a{
+  //         color: pink !important;
+  //     }
+  // }
+
+  // h1 {
+  //     font-size: $fs
+  // }
+
+  // NavbarBrand{
+  //     :hover {
+  //         opacity: 0.3;
+  //         color: $white;
+  //     }
+  // }
 }
 
 // .nav-link {
@@ -46,4 +54,3 @@
 //         opacity: 0.3;
 //     }
 // }
-

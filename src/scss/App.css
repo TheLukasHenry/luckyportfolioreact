@@ -129,6 +129,16 @@
   z-index: 1;
 }
 
+.header .navbar-brand :hover {
+  opacity: 0.8;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
+}
+
+.header .navbar-brand img {
+  max-height: 2.2em;
+}
+
 .header .nav-link :hover {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
@@ -219,12 +229,12 @@
   width: min-content;
 }
 
-.buttons {
+.landing .buttons {
   width: clamp(200px, 100%, 90vw);
   text-align: center;
 }
 
-.btn:hover {
+.landing .btn:hover {
   -webkit-box-shadow: 3px 3px 10px black;
           box-shadow: 3px 3px 10px black;
   -webkit-transition-duration: 200ms;
@@ -337,31 +347,22 @@
   scroll-margin-top: 4rem;
 }
 
-.card .btn,
-.card .card-text {
-  display: none;
+.card .btn {
+  z-index: -1;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
 }
 
-.card .card-title {
-  margin-bottom: 300px;
+.card:hover .btn {
+  z-index: 0;
+  -webkit-transform: z-in;
+          transform: z-in;
 }
 
-.card .card-text {
-  overflow-y: scroll;
-  max-height: 200px;
-}
-
-.card:hover {
-  -webkit-animation-timing-function: cubic-bezier(0.1, 0.12, 0.25, 1);
-          animation-timing-function: cubic-bezier(0.1, 0.12, 0.25, 1);
-}
-
-.card:hover .btn,
-.card:hover .card-text {
-  display: block;
-}
-
-.card:hover .card-title {
-  margin-bottom: 0px;
+.card:hover .btn :hover {
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 /*# sourceMappingURL=App.css.map */

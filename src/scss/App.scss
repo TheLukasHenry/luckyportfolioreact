@@ -19,35 +19,43 @@
 }
 
 .card {
-  .btn,
-  .card-text {
-    display: none;
+
+
+
+  .btn{
+    z-index: -1;
+
+    transition-delay: 3s;
+
+
+
   }
 
-  .card-title {
-    margin-bottom: 300px;
-  }
-  .card-text {
-    overflow-y: scroll;
-    // scrollbar-base-color: green;
-    // scrollbar-color: green;
-    // scrollbar-arrow-color: green;
-    // scrollbar-track-color: green;
-    // scrollbar-3dlight-color: green;
-    // scrollbar-face-color: green;
-    // scrollbar-track-color: green;
-    max-height: 200px;
-  }
 }
 
 .card:hover {
-  animation-timing-function: cubic-bezier(0.1, 0.12, 0.25, 1);
-  .btn,
-  .card-text {
-    display: block;
+
+  .btn{
+    z-index: 0;
+    transform: z-in;
+
+    // transition-delay: 1s;
+    // transition-duration: 2000ms;
+
+    :hover {
+        box-shadow: 3px 3px 10px black;
+        transition-duration: 200ms;
+      }
   }
 
-  .card-title {
-    margin-bottom: 0px;
-  }
 }
+
+// .buttons {
+//     width: clamp(200px, 100%, 90vw);
+//     text-align: center;
+//   }
+
+//   .btn:hover {
+//     box-shadow: 3px 3px 10px black;
+//     transition-duration: 200ms;
+//   }

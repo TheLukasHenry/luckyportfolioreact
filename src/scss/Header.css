@@ -63,6 +63,16 @@
   z-index: 1;
 }
 
+.header .navbar-brand :hover {
+  opacity: 0.8;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
+}
+
+.header .navbar-brand img {
+  max-height: 2.2em;
+}
+
 .header .nav-link :hover {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;

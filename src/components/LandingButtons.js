@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import Pdf from '../pictures/Lucky-resume-final.pdf'
+import Pdf from '../pictures/Resume_Lukas_Herajt.pdf'
 
 
 export default function LandingButtons() {

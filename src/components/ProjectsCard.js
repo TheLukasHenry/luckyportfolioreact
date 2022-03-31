@@ -21,18 +21,27 @@ export default function ProjectsCard(props) {
       <CardTitle tag="h3">
         {h1}, id: {id}
       </CardTitle>
-      <CardText className="mb-auto">
+      {/* <CardText className="mb-auto">
         {body}
-      </CardText>
+      </CardText> */}
 
-      <Button color="success" href={codeHref} target="_blank" className="m-1">
+      <Button 
+      color="success" 
+      href={codeHref} 
+      target="_blank" 
+      className="m-2"
+      
+      >
         Code
       </Button>
 
 
       <Button color="success"
         href={siteHref}
-        target="_blank" className="m-1" new>
+        target="_blank" 
+        className="m-2"
+        new
+        >
         Site
       </Button>
 
@@ -41,10 +50,10 @@ export default function ProjectsCard(props) {
 
 
 
-      <div>
-        <Button
-          color="danger"
 
+        <Button
+          color="success"
+          className="m-2"
           onClick={toggle}
         >
           About project
@@ -89,7 +98,7 @@ export default function ProjectsCard(props) {
           
           </ModalFooter>
         </Modal>
-      </div>
+
 
     </Card>
   )
