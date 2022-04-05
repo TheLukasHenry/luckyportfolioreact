@@ -9,7 +9,7 @@ export default function LandingButtons() {
         
          landing-buttons"
         >
-            {/* col working classes:  offset-md-8, position-absolute, */}
+
             <div className="mb-5">
 
               

@@ -26,9 +26,10 @@
     z-index: -1;
 
     transition-delay: 3s;
-
-
-
+  }
+  .project-description {
+    margin-top: 3rem;
+    padding: 1rem;
   }
 
 }
@@ -48,14 +49,9 @@
       }
   }
 
+  .project-description {
+    display: none;
+  }
+
 }
 
-// .buttons {
-//     width: clamp(200px, 100%, 90vw);
-//     text-align: center;
-//   }
-
-//   .btn:hover {
-//     box-shadow: 3px 3px 10px black;
-//     transition-duration: 200ms;
-//   }

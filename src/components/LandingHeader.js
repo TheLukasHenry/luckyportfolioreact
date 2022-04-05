@@ -1,13 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import profilePic from '../pictures/bg2.jpg'
+
 
 export default function LandingHeader() {
     return (
         <Col
             md="8"
-            // style={{ backgroundImage: `url(${profilePic})` }}
-            className="profile-pic"
         >
             <Container className="header-section ml-md-2 text-landing">
                 <Row><h1 className="ml-md-0 mt-5 mb-n4 text-landing">Lucky</h1></Row>

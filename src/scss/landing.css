@@ -69,14 +69,14 @@
   height: 100vh;
 }
 
-.landing .picc {
+.landing .bg-pic {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../pictures/bg2.jpg");
   background-color: #262626;
   opacity: 0.1;
   background-blend-mode: multiply;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 100%;
 }
@@ -87,9 +87,8 @@
   width: min-content;
 }
 
-.landing .buttons {
-  width: clamp(200px, 100%, 90vw);
-  text-align: center;
+.landing .landing-buttons {
+  z-index: 1;
 }
 
 .landing .btn:hover {
@@ -97,5 +96,11 @@
           box-shadow: 3px 3px 10px black;
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
+}
+
+.lnd-btn {
+  z-index: 5;
+  pointer-events: all;
+  pointer-events: visible;
 }
 /*# sourceMappingURL=landing.css.map */

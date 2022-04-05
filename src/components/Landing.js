@@ -13,10 +13,10 @@ export default function Landing() {
             <Row className="align-items-top landing position-relative">
                 <LandingHeader/>
 
-                <LandingButtons className=""/>
 
 
-            <div className="position-absolute picc"></div>
+                <LandingButtons className="lnd-btn"/>
+            <div className="position-absolute bg-pic"></div>
             </Row>
 </>
 
