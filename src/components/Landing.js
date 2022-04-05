@@ -16,6 +16,7 @@ export default function Landing() {
                 <LandingButtons className=""/>
 
 
+            <div className="position-absolute picc"></div>
             </Row>
 </>
 
