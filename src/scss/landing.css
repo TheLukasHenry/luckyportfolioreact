@@ -90,17 +90,4 @@
 .landing .landing-buttons {
   z-index: 1;
 }
-
-.landing .btn:hover {
-  -webkit-box-shadow: 3px 3px 10px black;
-          box-shadow: 3px 3px 10px black;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.lnd-btn {
-  z-index: 5;
-  pointer-events: all;
-  pointer-events: visible;
-}
 /*# sourceMappingURL=landing.css.map */

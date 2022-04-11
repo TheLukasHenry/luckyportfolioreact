@@ -32,17 +32,9 @@
     }
 
    .landing-buttons {
-z-index: 1;
+      z-index: 1;
   }
 
-  .btn:hover {
-    box-shadow: 3px 3px 10px black;
-    transition-duration: 200ms;
-  }
+
   }
 
-  .lnd-btn {
-    z-index: 5;
-    pointer-events: all;
-    pointer-events: visible;
-  }

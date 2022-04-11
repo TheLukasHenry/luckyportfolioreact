@@ -1,6 +1,4 @@
-@import-normalize;
 @import "./variables/scss-variables.scss";
-// @import "./variables/css-variables.scss";
 
 @import "./header.scss";
 @import "./landing.scss";
@@ -9,7 +7,6 @@
 
 .main-container {
   background: $primary;
-  // box-sizing: content-box;
 }
 
 * {
@@ -18,40 +15,12 @@
   scroll-margin-top: 4rem;
 }
 
-.card {
-
-
-
-  .btn{
-    z-index: -1;
-
-    transition-delay: 3s;
-  }
-  .project-description {
-    margin-top: 3rem;
-    padding: 1rem;
-  }
-
+.button {
+  padding: 0.5rem 1rem;
+  width: clamp(100%, 200px, 90%);
+  border-radius: 5px;
+  background-color: #218838;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
 }
-
-.card:hover {
-
-  .btn{
-    z-index: 0;
-    transform: z-in;
-
-    // transition-delay: 1s;
-    // transition-duration: 2000ms;
-
-    :hover {
-        box-shadow: 3px 3px 10px black;
-        transition-duration: 200ms;
-      }
-  }
-
-  .project-description {
-    display: none;
-  }
-
-}
-

@@ -1,41 +1,24 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
-
-import { useParams } from 'react-router-dom'
-
-
-
 import ProjectsCard from './ProjectsCard'
 
 export default function Projects() {
-
     const projects = projectsList
-    const { id } = useParams()
 
     return (
-
         <Row
             id="projects"
             className="my-5"
         >
-
-
             {projects.map(project => {
                 return (
-
-                    <Col md={6} xl={4} className="p-3">
-                        <ProjectsCard key={project.id} {...project} />
-
+                    <Col md={6} xl={4} className="p-3" key={project.id}>
+                        <ProjectsCard  {...project} />
                     </Col>
                 )
             }
             )}
-
-
-
-
         </Row>
-
     )
 }
 

@@ -6,7 +6,6 @@
 @import url("http://fonts.cdnfonts.com/css/cubano");
 @import url("http://fonts.cdnfonts.com/css/sofia-pro");
 @import url("http://fonts.cdnfonts.com/css/cubano");
-@import-normalize;
 :root h3 {
   font-size: 1.6rem;
 }
@@ -131,6 +130,7 @@
 
 .header .navbar-brand :hover {
   opacity: 0.8;
+  scale: 1.1;
   -webkit-transition: 150ms all ease-in-out;
   transition: 150ms all ease-in-out;
 }
@@ -142,6 +142,12 @@
 .header .nav-link :hover {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
+}
+
+.header .dropdown-menu .dropdown-item:hover a svg {
+  scale: 1.1;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
 }
 
 :root h3 {
@@ -235,19 +241,6 @@
   z-index: 1;
 }
 
-.landing .btn:hover {
-  -webkit-box-shadow: 3px 3px 10px black;
-          box-shadow: 3px 3px 10px black;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.lnd-btn {
-  z-index: 5;
-  pointer-events: all;
-  pointer-events: visible;
-}
-
 :root h3 {
   font-size: 1.6rem;
 }
@@ -327,21 +320,12 @@
           transition-duration: 300ms;
 }
 
-.project-card {
-  -webkit-box-shadow: 1px 1px 5px #333333;
-          box-shadow: 1px 1px 5px #333333;
+.card-tech-text {
+  margin: 5rem 1rem 0rem 1rem;
 }
 
-.project-card:hover {
-  -webkit-box-shadow: 3px 3px 10px black;
-          box-shadow: 3px 3px 10px black;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.project-card {
-  background-color: #d1e0d9;
-  color: #262626;
+.card_btns {
+  z-index: 1;
 }
 
 .main-container {
@@ -354,31 +338,13 @@
   scroll-margin-top: 4rem;
 }
 
-.card .btn {
-  z-index: -1;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
-}
-
-.card .project-description {
-  margin-top: 3rem;
-  padding: 1rem;
-}
-
-.card:hover .btn {
-  z-index: 0;
-  -webkit-transform: z-in;
-          transform: z-in;
-}
-
-.card:hover .btn :hover {
-  -webkit-box-shadow: 3px 3px 10px black;
-          box-shadow: 3px 3px 10px black;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.card:hover .project-description {
-  display: none;
+.button {
+  padding: 0.5rem 1rem;
+  width: clamp(100%, 200px, 90%);
+  border-radius: 5px;
+  background-color: #218838;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=App.css.map */

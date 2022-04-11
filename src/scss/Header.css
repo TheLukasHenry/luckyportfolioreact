@@ -65,6 +65,7 @@
 
 .header .navbar-brand :hover {
   opacity: 0.8;
+  scale: 1.1;
   -webkit-transition: 150ms all ease-in-out;
   transition: 150ms all ease-in-out;
 }
@@ -76,5 +77,11 @@
 .header .nav-link :hover {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
+}
+
+.header .dropdown-menu .dropdown-item:hover a svg {
+  scale: 1.1;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
 }
 /*# sourceMappingURL=header.css.map */

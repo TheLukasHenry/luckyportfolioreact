@@ -5,21 +5,25 @@
   .navbar-brand {
     :hover {
       opacity: 0.8;
+      scale: 1.1;
       transition: 150ms all ease-in-out;
     }
     img {
       max-height: 2.2em;
     }
   }
-
-
-
   .nav-link {
 
-
     :hover {
-   
+
       transition-duration: 300ms;
+    }
+  }
+  .dropdown-menu .dropdown-item:hover{
+    a svg{
+      scale: 1.1;
+      transition: 150ms all ease-in-out;
+
     }
   }
 

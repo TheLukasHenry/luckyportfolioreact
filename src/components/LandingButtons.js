@@ -1,30 +1,40 @@
 import React from 'react'
-import { Col, Button } from 'reactstrap'
-import { Link } from 'react-router-dom'
-import Pdf from '../pictures/Resume_Lukas_Herajt.pdf'
+import { Col } from 'reactstrap'
+import { motion } from 'framer-motion'
+import Pdf from '../pictures/ResumeLukas.pdf'
 
 
 export default function LandingButtons() {
     return (
-        <Col md="4" className="
+        <Col 
+        md="4" 
+        className="
         mt-md-5
-
          landing-buttons"
-         >
-         {/* col working classes:  offset-md-8, position-absolute, */}
-            <div className="buttons mx-auto my-md-2">
-
-             <Button href="#projects" block color="success" className="" size="lg">
-                 Projects
-                 </Button>
-
-
-                
-                <Button block color="success" className="btn my-4" size="lg" href={Pdf} target="_blank" rel='noopener noreferrer'>Resume</Button>
+        >
+            <div className="buttons mx-auto my-md-2 mx-md-2">
+                <a href="#projects">
+                    <motion.button
+                    // onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className="button"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        Projects
+                    </motion.button>
+                </a>
+                <a href={Pdf} target="_blank" rel='noopener noreferrer'>
+                    <motion.button
+                        className="button my-4"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        Resume
+                    </motion.button>
+                </a>
             </div>
             <div className="">
-
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+            Welcome 🤗. My hobby is to daily learn tiny piece of Web Development. Intellectually curious web developer with proficiency in React, JavaScript and CSS.
             </div>
         </Col>
     )

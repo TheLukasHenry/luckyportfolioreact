@@ -14,7 +14,6 @@ export default function LandingHeader() {
                     <Col className="text-right text-landing" size="6"><p>Web Developer</p></Col>
                 </Row>
             </Container>
-
         </Col>
     )
 }
