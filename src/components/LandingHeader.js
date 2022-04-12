@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
+import { motion } from 'framer-motion'
 
 
 export default function LandingHeader() {
@@ -8,10 +9,33 @@ export default function LandingHeader() {
             md="8"
         >
             <Container className="header-section ml-md-2 text-landing">
-                <Row><h1 className="ml-md-0 mt-5 mb-n4 text-landing">Lucky</h1></Row>
-                <Row className="h1-text">
-                    <Col className="text-landing" size="6"><p>A.K.A. Lukas</p></Col>
-                    <Col className="text-right text-landing" size="6"><p>Web Developer</p></Col>
+
+                <Row>
+                    <motion.div
+                        className="ml-md-0 mt-5 mb-n4 text-landing landing-h1"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1}}
+                        transition={{ duration: 1.5, delay: 0.5 }}
+            
+                    >
+                        Lucky
+                    </motion.div>
+                </Row>
+                <Row className="mt-n2">
+                    <Col className="text-landing p-0" size="6">
+                        <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 1.5 }}
+                        >A.K.A. Lukas</motion.div>
+                    </Col>
+                    <Col className="text-right text-landing p-0" size="6">
+                        <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 1.5 }}
+                        >Web Developer</motion.div>
+                    </Col>
                 </Row>
             </Container>
         </Col>

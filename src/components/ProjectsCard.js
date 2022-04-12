@@ -49,7 +49,7 @@ export default function ProjectsCard(props) {
       >
         <Card body
           outline
-          className="project-card h-100 position-relative"
+          className="project-card h-100 position-relative shadow-sm"
         >
           <CardTitle
             tag="h3"

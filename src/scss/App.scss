@@ -5,6 +5,11 @@
 @import "./footer.scss";
 @import "./cards.scss";
 
+// html, body{
+//   overflow-x: none;  
+//   max-width: 100%;
+// }
+
 .main-container {
   background: $primary;
 }

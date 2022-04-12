@@ -26,7 +26,7 @@ export default function Header() {
         <Link
           to="/"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        ><img src={Logo} alt="resume" /></Link>
+        ><img src={Logo} alt="home" /></Link>
 
       </NavbarBrand>
       <NavbarToggler onClick={navbarToggler} />

@@ -241,6 +241,14 @@
   z-index: 1;
 }
 
+.landing .landing-h1 {
+  font-size: 7rem;
+  font-family: "Cubano", sans-serif;
+  font-weight: bold;
+  color: #d1e0d9;
+  z-index: 1;
+}
+
 :root h3 {
   font-size: 1.6rem;
 }

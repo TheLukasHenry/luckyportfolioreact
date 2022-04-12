@@ -5,17 +5,28 @@ import Pdf from '../pictures/ResumeLukas.pdf'
 
 
 export default function LandingButtons() {
+
     return (
-        <Col 
-        md="4" 
-        className="
+        <Col
+            md="4"
+            className="
         mt-md-5
          landing-buttons"
         >
-            <div className="buttons mx-auto my-md-2 mx-md-2">
+            <motion.div
+                initial={{ x: "120%" }}
+                animate={{ x: "0%" }}
+                transition={{ duration: 1, delay: 1.5, type: 'spring' }}
+                className="mb-5">
+                Welcome 🤗. My hobby is to daily learn tiny piece of Web Development. Intellectually curious web developer with proficiency in React, JavaScript and CSS.
+            </motion.div>
+            <motion.div
+                initial={{ y: "520%" }}
+                animate={{ y: "0%" }}
+                transition={{ duration: 1, delay: 1.5, type: 'spring' }}
+                className="buttons mx-auto my-md-2 mx-md-2">
                 <a href="#projects">
                     <motion.button
-                    // onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="button"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -32,10 +43,8 @@ export default function LandingButtons() {
                         Resume
                     </motion.button>
                 </a>
-            </div>
-            <div className="">
-            Welcome 🤗. My hobby is to daily learn tiny piece of Web Development. Intellectually curious web developer with proficiency in React, JavaScript and CSS.
-            </div>
+            </motion.div>
+
         </Col>
     )
 }
