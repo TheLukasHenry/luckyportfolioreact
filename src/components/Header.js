@@ -49,19 +49,19 @@ export default function Header() {
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem className="text-center nav-contact-link">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://twitter.com/LukasHerajt" rel="noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faTwitterSquare}></FontAwesomeIcon></a>
+                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://twitter.com/LukasHerajt" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faTwitterSquare}></FontAwesomeIcon></a>
               </DropdownItem>
               <DropdownItem className="text-center">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://github.com/Lherajt" rel="noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faGithubSquare}></FontAwesomeIcon></a>
+                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://github.com/Lherajt" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faGithubSquare}></FontAwesomeIcon></a>
               </DropdownItem>
               <DropdownItem className="text-center">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="mailto:lherajt@gmail.com" rel="noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faEnvelopeSquare}></FontAwesomeIcon></a>
+                <a className="h1 text-dark h-100 m-0" target="_blank" href="mailto:lherajt@gmail.com" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faEnvelopeSquare}></FontAwesomeIcon></a>
               </DropdownItem>
               <DropdownItem className="text-center">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="tel:201-640-7892" rel="noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faPhoneSquare}></FontAwesomeIcon></a>
+                <a className="h1 text-dark h-100 m-0" target="_blank" href="tel:201-640-7892" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faPhoneSquare}></FontAwesomeIcon></a>
               </DropdownItem>
               <DropdownItem className="text-center">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://www.linkedin.com/in/lukasherajt" rel="noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faLinkedin}></FontAwesomeIcon></a>
+                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://www.linkedin.com/in/lukasherajt" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faLinkedin}></FontAwesomeIcon></a>
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
