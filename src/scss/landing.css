@@ -1,5 +1,20 @@
-@import url("http://fonts.cdnfonts.com/css/sofia-pro");
-@import url("http://fonts.cdnfonts.com/css/cubano");
+@font-face {
+  font-family: "Cubano";
+  src: url("../fonts/Cubano.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
 :root h3 {
   font-size: 1.6rem;
 }
@@ -62,7 +77,7 @@
 .landing {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  font-family: "Sofia Pro", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #d1e0d9;
   background-color: #262626;
   overflow-y: hidden;

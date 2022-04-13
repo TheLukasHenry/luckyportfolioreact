@@ -52,8 +52,7 @@ export default function ProjectsCard(props) {
           className="project-card h-100 position-relative shadow-sm"
         >
           <CardTitle
-            tag="h3"
-            className="text-center"
+            className="text-center card-title"
           >
             {h1}
           </CardTitle>

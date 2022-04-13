@@ -5,4 +5,8 @@
 .card_btns {
   z-index: 1;
 }
+
+.card-title {
+  font-weight: 800;
+}
 /*# sourceMappingURL=cards.css.map */
