@@ -93,7 +93,8 @@
   font-size: 7rem;
   font-family: "Cubano", sans-serif;
   font-weight: bold;
-  color: #d1e0d9;
+  color: white;
+  font-style: normal;
   z-index: 1;
 }
 /*# sourceMappingURL=landing.css.map */
