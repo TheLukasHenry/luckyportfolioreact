@@ -8,8 +8,12 @@ export default function ProjectsCard(props) {
 
   const [show, setShow] = useState(false);
   const toggle = () => setShow(!show);
-
-  const buttonMotion = {
+  const isMobile = window.innerWidth < 768
+  let buttonOpacity = {}
+  let textOpacity = {}
+  let buttonClassName = ""
+  !isMobile ? 
+  buttonOpacity = {
     rest: { opacity: 0, ease: "easeOut", duration: 0.2, type: "tween" },
     hover: {
       opacity: 1,
@@ -19,9 +23,12 @@ export default function ProjectsCard(props) {
         ease: "easeIn"
       }
     }
-  }
+  } 
+  : buttonOpacity = {}
 
-  const textOpacity = {
+  !isMobile ? buttonClassName = "px-4 card_btns" : buttonClassName = "px-4 card_btns mt-5 pt-5"
+
+  !isMobile ? textOpacity = {
     rest: {
       opacity: 1,
       transition: {
@@ -38,18 +45,19 @@ export default function ProjectsCard(props) {
         ease: "easeOut"
       }
     }
-  };
+  } : textOpacity = {}
 
   return (
     <>
       <motion.div
+      className="h-100"
         initial="rest"
         whileHover="hover"
         animate="rest"
       >
         <Card body
           outline
-          className="project-card h-100 position-relative shadow-sm"
+          className="project-card position-relative shadow-sm h-100"
         >
           <CardTitle
             className="text-center card-title"
@@ -64,7 +72,7 @@ export default function ProjectsCard(props) {
             {technology}
           </motion.div>
 
-          <motion.div variants={buttonMotion} className="px-4 card_btns">
+          <motion.div variants={buttonOpacity} className={buttonClassName}>
               <motion.button
               onClick={event =>  window.open(`${codeHref}`, '_blank', 'noopener,noreferrer')}
                 className="button my-2"
@@ -73,6 +81,7 @@ export default function ProjectsCard(props) {
               >
                 Code
               </motion.button>
+              {siteHref && (
               <motion.button
               onClick={event =>  window.open(`${siteHref}`, '_blank', 'noopener,noreferrer')}
                 className="button my-2"
@@ -81,6 +90,7 @@ export default function ProjectsCard(props) {
               >
                 Site
               </motion.button>
+              )}
             <motion.button
               className="button my-2"
               initial={{ scale: 1 }}
@@ -88,7 +98,7 @@ export default function ProjectsCard(props) {
               whileTap={{ scale: 0.9 }}
               onClick={toggle}
             >
-              About project
+              About
             </motion.button>
           </motion.div>
         </Card>
