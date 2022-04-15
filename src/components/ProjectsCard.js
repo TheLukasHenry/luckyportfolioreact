@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Card, CardTitle, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 
 
+
 export default function ProjectsCard(props) {
   const { h1, body, technology, codeHref, siteHref} = props
 
@@ -112,7 +113,10 @@ export default function ProjectsCard(props) {
         isOpen={show}
         modalTransition={{ timeout: 500 }}
       >
-        <ModalHeader toggle={toggle}>
+        <ModalHeader
+        //  toggle={toggle}
+        // charCode="close"
+         >
           {h1}
         </ModalHeader>
         <ModalBody>

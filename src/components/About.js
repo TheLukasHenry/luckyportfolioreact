@@ -8,9 +8,9 @@ export default function About() {
     return (
 
         <Row className="align-items-top landing position-relative overflow-hidden">
-            <AboutHeader className="bg-pic" />
+            <AboutHeader className="" />
             <AboutButtons />
-            <div className="position-absolute bg-pic"></div>
+            <div className="position-absolute about-bg-pic"></div>
         </Row>
     )
 }

@@ -26,7 +26,7 @@ const projectsList = [
     {
         id: 1,
         h1: 'QA-app',
-        technology: 'Tech used: Typescript, React, Graphql, Reactstrap, React-router-dom, Javascript, HTML, CSS',
+        technology: 'Tech used: Typescript, React(useReducer, useEffect), Graphql, Reactstrap, React-router-dom, Javascript, HTML, CSS',
         body: 'Questions and answers app for our testing team. Build with React and Typescript. Stateful data kept in useReducer hook. Created queries for our Graphql database. I build custom hooks for our Graphql queries. ',
         codeHref: 'https://github.com/Lherajt/HireTalk-QA-ui',
         siteHref: ''
@@ -34,7 +34,7 @@ const projectsList = [
     {
         id: 2,
         h1: 'Sports Search API',
-        technology: 'Tech used: Javascript async/await, fetch, JSON, HTML, CSS',
+        technology: 'Tech used: Javascript, async/await, fetch, JSON, HTML, CSS',
         body: 'I enjoy sports so making this project was fun. I got access to the thesportsdb.com API with the API key to get the data. Originally, I made 4 async-await functions which were getting data and displaying it in the DOM. Those were for the athlete card, league highlights, sports highlights and scores. I made the functions into one big function after making them work. Styling the page was the next step and I used the VanillaTilt.js to add the cool glare effect to bigger screens.',
         codeHref: 'https://github.com/Lherajt/LuckyPortfolio/tree/gh-pages/sportAPI',
         siteHref: 'https://luckyportfolio.com/sportAPI/index.html'

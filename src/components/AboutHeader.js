@@ -11,7 +11,7 @@ export default function LandingHeader() {
             <Container className="header-section ml-md-2">
                 <Row>
                     <motion.div
-                        className="ml-md-0 mt-5 mb-n4 text-landing landing-h1"
+                        className="ml-md-0 mt-n4 mb-n4 text-landing landing-h1"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1}}
                         transition={{ duration: 1.5, delay: 0.5 }}
@@ -20,7 +20,7 @@ export default function LandingHeader() {
                         About
                     </motion.div>
                 </Row>
-                <Row className="mt-n2">
+                {/* <Row className="mt-n2">
                     <Col className="text-landing p-0" size="6">
                         <motion.div
                             initial={{ opacity: 0, y: 100 }}
@@ -35,7 +35,7 @@ export default function LandingHeader() {
                             transition={{ duration: 0.5, delay: 1.5 }}
                         >Web Developer</motion.div>
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
         </Col>
     )
